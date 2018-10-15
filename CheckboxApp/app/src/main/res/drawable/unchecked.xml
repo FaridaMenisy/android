@@ -1,0 +1,4 @@
+Backwards compatibility allows you to use certain backwards compatible features in your app. 
+They will be able to work on previous versions of Android. For example, instead of Activity , 
+AppCompatActivity will be used and is something 
+that is "backwards" compatible. It can be used all the way back to API level 15
