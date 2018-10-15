@@ -1,0 +1,34 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+package="com.example.ntguser.fisrtandroidapplication">
+<!-- manifest contains info abt my pkg  -->
+<application
+    android:allowBackup="true"
+    android:icon="@mipmap/ic_launcher"
+    android:label="@string/app_name"
+    android:roundIcon="@mipmap/ic_launcher_round"
+    android:supportsRtl="true"
+    android:theme="@style/AppTheme" >
+
+    <activity
+        android:name=".FirstActivity"
+        android:label="@string/app_name"
+
+        <!-- The screenOrientation is the attribute of activity element.
+        The orientation of android activity can be portrait, landscape, sensor,
+        unspecified etc. You need to define it in the AndroidManifest.xml file.-->
+
+
+        android:screenOrientation="portrait"
+        android:theme="@android:style/Theme.NoTitleBar.Fullscreen">
+        <!-- intent-filter is the sub-element of activity that describes the type of intent to which activity, service or broadcast receiver can respond to.
+
+-->
+        <intent-filter>
+            <!--  it adds an action for the intent-filter. The intent-filter must have at least one action element -->
+            <action android:name="android.intent.action.MAIN" />
+            <!--  It adds a category name to an intent-filter. -->
+            <category android:name="android.intent.category.LAUNCHER" />
+        </intent-filter>
+    </activity>
+</application>
+</manifest>

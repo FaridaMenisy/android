@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">FisrtAndroidApplication</string>
+    <string name = "helloAndroid" > Hello People!!</string>
+</resources>
